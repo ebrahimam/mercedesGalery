@@ -1,5 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: lora;
+  src: url('../public/fonts/Lora/static/Lora-Bold.ttf');
+}
+@font-face {
+  font-family: sans;
+  src: url('../public/fonts/A-Iranian-Sans/A-Iranian-Sans/Iranian\ Sans.ttf');
+}
+button {
+  font-family: lora;
+}
 html,
 body {
+  background-color: #dcdde1;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -24,3 +39,325 @@ a {
     background: black;
   }
 }
+.sans 
+{
+  font-family: sans;
+}
+/* //////////////////////////////////HEADER///////////////////////////////////// */
+ul
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+ul li 
+{
+  margin: 8px;
+}
+ .menu ul li a:hover
+{
+  transform: scale(0.7);
+}
+.Header {
+  width: 100%;
+  background-color: #3b3b3b;
+  color: white;
+  padding: 0.2rem 0.5rem ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* //////////////////////////container//////////////////// */
+.cont 
+{
+  background-size: cover;
+  background-color: #f9fafc;
+}
+.txt 
+{
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 20rem;
+  filter: blur(0.6);
+  direction: rtl;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  width: 30%;
+  
+}
+.xll 
+{
+  font-size: 24px;
+}
+.hrs
+{
+  border: 0;
+  height: 1px ;
+  background: linear-gradient(to right,rgba(255,255,255,0),rgba(255, 255, 255, 0.753));
+}
+.mer
+{
+  top: 200px;
+  left: -300px;
+  font-family: lora;
+  font-size: 64px;
+  background-clip: text;
+  
+    background-color: #fff;
+    background-image: linear-gradient(to right, #00f260, #0575e6);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    animation: splash 1s normal forwards ease-in-out;}
+
+    @keyframes splash {
+      0%{
+        left: -300px;
+      }
+      100%
+      {
+        left: 100px;
+      }
+      
+    }
+/* ////////////////////////////////Items/////////////////////////////////////////////////////// */
+.items 
+{
+  width: 100%;
+  margin-top: 2rem;
+   display: flex;
+   justify-content: center;
+   padding:10px
+}
+.items .itemha 
+{
+  display: flex;
+  background:#f9fafc49;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 5px;
+  gap: 64px;
+  margin:16px 0;
+  
+}
+.item1, .item2, .item3 
+{
+  border: 1px solid rgb(230, 224, 224);
+  padding: 3rem ;
+  border-radius: 5px;
+}
+.item3:hover,.item1:hover,.item2:hover
+{
+  background-color:#e9e9f1de ;
+}
+/* /////////////////////////////Sells/////////////////////////////////////// */
+.Sells 
+{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+
+}
+.Sells .sel 
+{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 100%;
+  align-items: center;
+
+
+}
+.Sells .sel .left 
+{
+  width: 100%;
+  background-size: cover;
+}
+.Sells .sel .left img 
+{
+  border-radius: 5px;
+}
+.Sells .sel .right 
+{
+  direction: rtl;
+  
+}
+/* ///////////////////////////////Vides//////////////////////////////// */
+.Vid 
+{
+  width: 100%;
+  height: 100vh;
+}
+/* //////////////////////////Galery///////////////////////////// */
+.Gallery 
+{
+  width:100%;
+height: 700px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.photos {  
+  width:90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "b a a"
+    "c d m";
+}
+.photos img 
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.a { grid-area: a;
+  background-size: cover;
+}
+.b { grid-area: b; 
+  background-size: cover;
+
+}
+
+.c { grid-area: c; }
+
+.d { grid-area: d; }
+
+.m { grid-area: m; }
+.footer 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.hrs
+{
+  border: 0;
+  height: 1px ;
+  background: linear-gradient(to right,rgba(240, 239, 239, 0.829),rgba(255, 255, 255, 0.753));
+}
+.menus 
+{
+  direction: rtl;
+  background-color: #1e272e;
+  padding: 5rem;
+}
+.menus a ,span
+{
+  color: rgba(255, 255, 255, 0.349);
+}
+.menus a:hover ,span:hover
+{
+  color: rgba(255, 255, 255, 0.938);
+
+}
+.hrss 
+{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(255, 255, 255, 0.479),rgba(0,0,0,0));
+}
+.footer  ul li  {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.349);
+  padding-bottom: 0.5rem;
+}
+.end
+{
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  direction: rtl;
+}
+/* ////////////////////////////////pages////////////////////////////////////////// */
+/* ////////////////////////////////////////About////////////////////////////////////////// */
+.p1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.p1 .ins {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 3rem 0;
+
+}
+
+.p1 .ins .txts 
+{
+  width: 50%;
+  font-family: lora;
+  font-weight: 400;
+  color: #3b3b3b;
+  text-transform: capitalize;
+}
+.p1 .ins .image 
+{
+  width: 50%;
+}
+/* /////////////////////////contactus//////////////////////////// */
+.contact .conta 
+{
+  width: 100%;
+  height: 100vh;
+  
+  
+}
+.contact .conta img 
+{
+  width: 100%;
+  height: 100%;
+}
+.contact .conta .tx 
+{
+  top: 50%;
+  text-align: center;
+  background-color: rgba(231, 221, 221, 0.938);
+  filter: blur(1.2);
+  padding: 1rem 0;
+}
+.contact .conta .box 
+{
+  display: flex;
+  justify-content: center;
+  top: 60%;
+  color: black;
+  width: 100%;
+  padding: 1rem;
+  
+}
+.contact .conta .box .whites 
+{
+  width: 80%;
+  border-radius: 5px ;
+  direction: rtl;
+  background-color: rgba(255,255,255,0.43);
+  box-shadow: -10px 0px 15px -3px rgba(0,0,0,0.1);
+}
+.contact .conta .box .whites ul li span
+
+{
+color: black;
+}
+
+
+
+
+
+
+
